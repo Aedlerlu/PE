@@ -1,5 +1,5 @@
 #！/bin/bash
-for i in $(ls /home/data/luzhuangzhuang/CHIPseq/results/input/*filetered.bam);
+for i in $(ls /home/data/luzhuangzhuang/CHIPseq/results/input/*filtered.bam);
 do
   sample=$(basename $i|cut -d '_' -f1)
   mkdir /home/data/luzhuangzhuang/CHIPseq/results/input/peak/${sample}
